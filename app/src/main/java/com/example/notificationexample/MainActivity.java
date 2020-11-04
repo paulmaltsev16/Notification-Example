@@ -54,8 +54,6 @@ public class MainActivity extends AppCompatActivity {
                 senOnChanel2();
             }
         });
-
-
     }
 
     private void sendOnChanel1() {
@@ -63,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         Notification notification = new NotificationCompat.Builder(context, CHANEL_ID_1)
                 .setSmallIcon(R.drawable.ic_first_chanel_icon)
                 .setContentTitle(title.getText().toString().isEmpty() ? "chanel 1" : title.getText().toString())
-                .setContentText(desc.getText().toString().isEmpty() ? "chanel 1 description" : title.getText().toString())
+                .setContentText(desc.getText().toString().isEmpty() ? "chanel 1 description" : desc.getText().toString())
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setCategory(NotificationCompat.CATEGORY_MESSAGE)
                 .build();
@@ -77,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         Notification notification = new NotificationCompat.Builder(context, CHANEL_ID_2)
                 .setSmallIcon(R.drawable.ic_second_chanel_icon)
                 .setContentTitle(title.getText().toString().isEmpty() ? "chanel 2" : title.getText().toString())
-                .setContentText(desc.getText().toString().isEmpty() ? "chanel 2 description" : title.getText().toString())
+                .setContentText(desc.getText().toString().isEmpty() ? "chanel 2 description" : desc.getText().toString())
                 .setPriority(NotificationCompat.PRIORITY_LOW)
                 .setCategory(NotificationCompat.CATEGORY_REMINDER)
                 .build();
